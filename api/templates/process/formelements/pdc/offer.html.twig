@@ -1,0 +1,60 @@
+
+{% set offers = commonground_resource_list({'component':'pdc', 'type':'offers'}, property.query)["hydra:member"] %}
+<div class="input input--horizontal">
+    <div>
+        <label class="input__label" for="{{ property.id }}">{{ property.title }}</label>
+    </div>
+    {% if property.type == 'string'%}
+    {% for offer in offers %}
+        {% if request.properties[property.name] is defined and request.properties[property.name] == offer['@id'] %}
+            <div class="input__group input__group--radio">
+                <input class="input__control input__control--radio" checked="checked" type="radio" id="{{ offer.id }}" name="request[properties][{{ property.name }}]" value="{{ offer['@id'] }}">
+                <label class="input__label input__label--radio" for="{{ offer.id }}">{{ offer.name|capitalize }}
+                    {% if offer.price != 0 %}<span style="float:right;">{{ offer.price }} {{ offer.priceCurrency|lower }}</span>{% endif %}</label><br>
+            </div>
+        {% else %}
+            <div class="input__group input__group--radio">
+                <input class="input__control input__control--radio" type="radio" id="{{ offer.id }}" name="request[properties][{{ property.name }}]" value="{{ offer['@id'] }}">
+                <label class="input__label input__label--radio" for="{{ offer.id }}">{{ offer.name|capitalize }}
+                    {% if offer.price != 0 %}
+                        <span style="float:right;">
+                            {% if offer.priceCurrency == 'EUR' %}
+                                €{{ offer.price }}
+                            {% else %}
+                                {{ offer.price }}
+                            {% endif %}
+                            {% if offer.price matches '/^\\d+$/' %}{{ ',-' }}{% else %}{% endif %}</span>
+                    {% endif %}</label><br>
+            </div>
+        {% endif %}
+    {% endfor %}
+    {% else%}
+    <ul class="input__group-list">
+            <li class="input__group input__group--checkbox">
+                <ul>
+                    {% set value = 1 %}
+                    {% for offer in offers %}
+
+                    <li>
+                        <input type="checkbox" class="input__control input__control--checkbox" value="{{ offer['@id'] }}" name="request[properties][{{ property.name }}][{{ value }}]" id="{{ offer.id }}">
+                        <label for="{{ offer.id }}" class="input__label input__label--checkbox">{{ offer.name }}
+                            {% if offer.price != 0 %}
+                                <span style="float:right;">
+                                {% if offer.priceCurrency == 'EUR' %}
+                                    €{{ offer.price }}
+                                {% else %}
+                                    {{ offer.price }}
+                                {% endif %}
+                                        {% if offer.price matches '/^\\d+$/' %}{{ ',-' }}{% else %}{% endif %}</span>
+                                {% endif %}
+                        </label>
+                    </li>
+                        {% set value = value + 1 %}
+                    {% endfor %}
+                </ul>
+            </li>
+
+    </ul>
+    {% endif %}
+</div>
+

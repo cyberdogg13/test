@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="nl" target-language="nl" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="xqke5.k" resname="requested">
+        <source>requested</source>
+        <target>aangevraagd</target>
+      </trans-unit>
+      <trans-unit id="3VFdGXW" resname="granted">
+        <source>granted</source>
+        <target>ingestemd</target>
+      </trans-unit>
+      <trans-unit id="4G_M.Dn" resname="submitted">
+        <source>submitted</source>
+        <target>ingediend</target>
+      </trans-unit>
+      <trans-unit id="qL_s87z" resname="declined">
+        <source>declined</source>
+        <target>afgewezen</target>
+      </trans-unit>
+      <trans-unit id="hVVLud1" resname="incomplete">
+        <source>incomplete</source>
+        <target>incompleet</target>
+      </trans-unit>
+      <trans-unit id="7rv2RX5" resname="complete">
+        <source>complete</source>
+        <target>kompleet</target>
+      </trans-unit>
+      <trans-unit id="WBkP_r_" resname="processed">
+        <source>processed</source>
+        <target>verwerkt</target>
+      </trans-unit>
+      <trans-unit id="i0cEXre" resname="cancelled">
+        <source>cancelled</source>
+        <target>geanuleerd</target>
+      </trans-unit>
+      <trans-unit id="UjZ6ZiK" resname="reference">
+        <source>reference</source>
+        <target>kenmerk</target>
+      </trans-unit>
+      <trans-unit id="gqNTf.D" resname="name">
+        <source>name</source>
+        <target>naam</target>
+      </trans-unit>
+      <trans-unit id="QG7.sen" resname="created">
+        <source>created</source>
+        <target>aangemaakt</target>
+      </trans-unit>
+      <trans-unit id="uAAShRz" resname="modified">
+        <source>modified</source>
+        <target>aangepast</target>
+      </trans-unit>
+      <trans-unit id="BzwWNMS" resname="status">
+        <source>status</source>
+        <target>status</target>
+      </trans-unit>
+      <trans-unit id="qDoxMg2" resname="resume">
+        <source>resume</source>
+        <target>hervat</target>
+      </trans-unit>
+      <trans-unit id="2BxV9Jx" resname="saved">
+        <source>saved</source>
+        <target>opgeslagen</target>
+      </trans-unit>
+      <trans-unit id="FGw_5pd" resname="could not be saved">
+        <source>could not be saved</source>
+        <target>kon niet opgeslagen worden</target>
+      </trans-unit>
+      <trans-unit id="jHE8PIT" resname="could not be created">
+        <source>could not be created</source>
+        <target>kon niet aangemaakt worden</target>
+      </trans-unit>
+      <trans-unit id="zO0oxtw" resname="start">
+        <source>start</source>
+        <target>starten</target>
+      </trans-unit>
+      <trans-unit id="dUkL17k" resname="submit">
+        <source>submit</source>
+        <target>indienen</target>
+      </trans-unit>
+      <trans-unit id="l6XSncR" resname="properties of the request">
+        <source>properties of the request</source>
+        <target>eigenschappen van het verzoek</target>
+      </trans-unit>
+      <trans-unit id="I3TZF5S" resname="cancel">
+        <source>cancel</source>
+        <target>annuleren</target>
+      </trans-unit>
+      <trans-unit id="yQRveje" resname="description">
+        <source>description</source>
+        <target>omschrijving</target>
+      </trans-unit>
+      <trans-unit id="inmIkP6" resname="yes">
+        <source>yes</source>
+        <target>ja</target>
+      </trans-unit>
+      <trans-unit id="k5Apjz_" resname="no">
+        <source>no</source>
+        <target>nee</target>
+      </trans-unit>
+      <trans-unit id="WpL28In" resname="instruction">
+        <source>instruction</source>
+        <target>instructies</target>
+      </trans-unit>
+      <trans-unit id="YFQKuu_" resname="this request is currently">
+        <source>this request is currently</source>
+        <target>__this request is currently</target>
+      </trans-unit>
+      <trans-unit id="UD6t0Eb" resname="retract">
+        <source>retract</source>
+        <target>intrekken</target>
+      </trans-unit>
+      <trans-unit id="EwPAaws" resname="type">
+        <source>type</source>
+        <target>type</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
